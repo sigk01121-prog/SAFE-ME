@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.header {
+    width: 100%;
+    height: 72px;
+    background: var(--white);
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.gnb {
+    height: 100%;
+}
+
+.gnb ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.gnb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 114px;
+    height: 100%;
+
+    font-size: 14px;
+    color: #333;
+
+    border-bottom: 2px solid transparent;
+}
+
+.gnb a:hover {
+    color: #365CF5;
+    border-bottom-color: #365CF5;
+}
+
+.header-search {
+    width: 20px;
+    height: 20px;
+}
+
+.header-search img {
+    width: 25px;
+    height: 20px;
+}
