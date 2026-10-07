@@ -13,6 +13,10 @@
     font-size: 32px;
 }
 
+.logo span {
+    color: var(--primary)
+}
+
 .gnb ul {
     display: flex;
     align-items: center;
@@ -39,7 +43,11 @@
     bottom: -26px;
     width: 0;
     height: 2px;
+<<<<<<< HEAD
     background: #365CF5;
+=======
+    background: var(--primary);
+>>>>>>> e4c285c5b9b0e873174fcb8c12574fa352c12742
     transition: width 0.3s ease;
 }
 
