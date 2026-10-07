@@ -13,6 +13,10 @@
     font-size: 32px;
 }
 
+.logo span {
+    color: var(--primary)
+}
+
 .gnb ul {
     display: flex;
     align-items: center;
@@ -39,13 +43,13 @@
     bottom: -26px;
     width: 0;
     height: 2px;
-    background: #635BFF;
+    background: var(--primary);
     transition: width 0.3s ease;
 }
 
 .gnb ul li a:hover,
 .gnb ul li a.on {
-    color: #635BFF;
+    color: var(--primary);
 }
 
 .gnb ul li a:hover::after,
