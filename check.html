@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFE:ME</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/check.css">
+    <script src="js/check.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="header-inner">
+                <h1 class="logo"><a href="index.html">SAFE<span>:</span>ME</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="guide.html">개인정보 가이드</a></li>
+                        <li><a href="check.html">체크리스트</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <img src="img/search-icon.png" alt="검색">
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <section class="hero">
+            <div class="inner">
+                <div class="hero-title">
+                    <div class="hero-text">
+                        <span class="label" id="heroLabel">
+                            CHECK YOUR PRIVACY
+                        </span>
+                        <h1 id="heroTitle">
+                            나의 개인정보 보호 습관을<br>
+                            <span class="point">
+                                직접 확인해 보세요!
+                            </span>
+                        </h1>
+                        <p class="sub-text" id="heroDescription">
+                            평소 개인정보를 어떻게 관리하고 있는지<br>
+                            8개의 체크리스트를 통해 간단하게 점검해 보세요.
+                        </p>
+                        <div class="hero-btns">
+                            <button type="button" class="btn-primary" id="startBtn">
+                                체크리스트 시작하기
+                            </button>
+                            <a href="guide.html" class="btn-outline">
+                                가이드 보기
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //hero -->
+
+        <main class="check-page">
+
+            <!-- checklist / score -->
+            <section class="check-score section" id="checkSection">
+
+                <div class="inner">
+                    <!-- title -->
+                    <div class="section-title">
+                        <h2 id="checkSectionTitle">
+                            개인정보 보호 체크리스트
+                        </h2>
+                        <p id="checkSectionDescription">
+                            평소 실천하고 있는 개인정보 보호 습관을 체크해 주세요.
+                        </p>
+                    </div>
+
+                    <div class="check-score-wrap">
+                        <!-- checklist -->
+                        <div class="check-answer-area">
+                            <div class="check-answer-list" id="questionList">
+                            </div>
+                            <div class="check-result-button-wrap">
+                                <button type="button" class="btn-primary result-btn" id="resultBtn">
+                                    결과 보기
+                                    <span>→</span>
+                                </button>
+
+                                <button type="button" class="btn-outline result-btn is-hidden" id="retryBtn">
+                                    다시 진행하기
+                                    <span>↻</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- score -->
+                        <div class="check-score-box">
+
+                            <div class="score-circle">
+                                <svg class="score-chart" viewBox="0 0 200 200">
+                                    <circle class="score-chart-bg" cx="100" cy="100" r="78">
+                                    </circle>
+                                    <circle class="score-chart-progress" id="scoreCircle" cx="100" cy="100" r="78">
+                                    </circle>
+                                </svg>
+
+                                <div class="score-text">
+                                    <div>
+                                        <strong id="scoreNumber">
+                                            0
+                                        </strong>
+                                        <span>
+                                            / 8
+                                        </span>
+                                    </div>
+                                    <em id="scoreGrade">
+                                        READY
+                                    </em>
+                                </div>
+                            </div>
+                            <h3 id="scoreMessage">
+                                체크리스트를 시작하고<br>
+                                나의 개인정보 보호 습관을 확인해 보세요.
+                            </h3>
+
+                            <div class="score-summary">
+                                <!-- safe / checked -->
+                                <div class="summary-row">
+                                    <span class="summary-icon">
+                                        <img src="img/check-img/icon-safe.png" alt="안전한 항목">
+                                    </span>
+                                    <span id="summaryLabel1">
+                                        선택한 항목
+                                    </span>
+                                    <strong id="safeCount">
+                                        0개
+                                    </strong>
+                                </div>
+
+                                <!-- warning / remaining -->
+                                <div class="summary-row">
+                                    <span class="summary-icon">
+                                        <img src="img/check-img/icon-warning.png" alt="주의가 필요한 항목">
+                                    </span>
+                                    <span id="summaryLabel2">
+                                        남은 항목
+                                    </span>
+                                    <strong id="warningCount">
+                                        8개
+                                    </strong>
+                                </div>
+
+                                <!-- total -->
+                                <div class="summary-row">
+                                    <span class="summary-icon">
+                                        <img src="img/check-img/icon-total.png" alt="전체 항목">
+                                    </span>
+                                    <span>
+                                        전체 항목
+                                    </span>
+                                    <strong id="totalCount">
+                                        8개
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //score -->
+                    </div>
+                </div>
+            </section>
+            <!-- //checklist / score -->
+
+            <!-- result -->
+            <section class="check-result section result-section">
+                <div class="inner">
+                    <div class="section-title">
+                        <h2>
+                            항목별 결과
+                        </h2>
+                        <p>
+                            각 항목의 결과를 확인하고,
+                            부족한 부분을 점검해 보세요.
+                        </p>
+                    </div>
+                    <div class="check-result-grid" id="resultGrid">
+                    </div>
+                </div>
+            </section>
+            <!-- //result -->
+
+            <!-- warning -->
+            <section class="check-warning section result-section">
+                <div class="inner">
+                    <div class="section-title">
+                        <h2>
+                            주의가 필요한 항목
+                        </h2>
+                        <p>
+                            더 안전한 개인정보 관리를 위해,
+                            지금 꼭 확인해 보세요.
+                        </p>
+                    </div>
+                    <div class="check-warning-grid" id="warningGrid">
+                    </div>
+                </div>
+            </section>
+            <!-- //warning -->
+
+            <!-- guide cta -->
+            <section class="check-guide-banner">
+                <div class="inner">
+                    <div class="check-guide-banner-inner">
+                        <div class="check-guide-text">
+                            <h2>
+                                더 안전한 디지털 일상을 위해<br>
+                                <span class="point">
+                                    개인정보 가이드
+                                </span>를 확인해 보세요.
+                            </h2>
+                            <p>
+                                각 항목에 대한 자세한 설명과
+                                실천 방법을 알아볼 수 있습니다.
+                            </p>
+                        </div>
+
+                        <div class="check-guide-action">
+                            <img src="img/check-guide-icon.png" alt="">
+                            <a href="guide.html" class="btn-primary">
+                                개인정보 가이드 보기
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //guide cta -->
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-top">
+                    <div class="footer-left">
+                        <a href="#" class="footer-logo">SAFE<span class="point">:</span>ME</a>
+                        <p>
+                            개인정보를 지키는 오늘이<br>
+                            더 나은 내일을 만듭니다.
+                        </p>
+                    </div>
+                    <nav class="footer-right">
+                        <a href="index.html">홈</a>
+                        <a href="guide.html">개인정보 가이드</a>
+                        <a href="check.html">체크리스트</a>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 SAFE:ME. All rights reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

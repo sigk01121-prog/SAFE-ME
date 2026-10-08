@@ -55,6 +55,8 @@ button {
     border: none;
     cursor: pointer;
     background: none;
+
+    font-family: inherit;
 }
 
 textarea {
