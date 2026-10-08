@@ -7,6 +7,7 @@
     <title>SAFE:ME</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/guide.css">
+    <script src="js/guide.js" defer></script>
 </head>
 
 <body>
@@ -34,10 +35,10 @@
                         <span class="label">PERSONAL PRIVACY</span>
 
                         <!-- 여기서 텍스트만 바꿔주면 됨 -->
-                        <h1>개인정보는<br>
-                            알수록 더<br>
+                        <h1>소중한 개인정보,<br>
+                            지키는 습관부터<br>
                             <!-- 파란색 글씨부분 -->
-                            <span class="point">안전해집니다.</span>
+                            <span class="point">시작됩니다.</span>
                         </h1>
                         <p class="sub-text">
                             일상 속 작은 실천으로<br>
@@ -53,72 +54,75 @@
         <section class="guide-menu-area">
             <div class="inner">
                 <div class="guide-menu">
-                    <h3>
-                        개인정보 보호, <br>
-                        개인정보를 지키는 방법
-                    </h3>
-                    <p class="guide-title">
-                        작은 실천이 <br>
-                        더 안전한 일상을 만듭니다.
-                    </p>
-
                     <ul>
                         <li>
-                            <span>01</span>
-                            <p>
+                            <h3>
+                                개인정보 보호, <br>
+                                <span>4가지 원칙</span>
+                            </h3>
+                            <p class="guide-title">
+                                작은 실천이 <br>
+                                더 안전한 일상을 만듭니다.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="point">01</span>
+                            <p class="guide-menu-text01">
                                 확인하기
                                 <img src="img/guide-img/guide-icon01.png" alt="">
                             </p>
-                            <p class="guide-menu-text">
+                            <p class="guide-menu-text02">
                                 내 개인정보가 어디에<br>
                                 사용되는지 확인해요.
                             </p>
                         </li>
 
                         <li>
-                            <span>02</span>
-                            <p>
+                            <span class="point">02</span>
+                            <p class="guide-menu-text01">
                                 최소화하기
                                 <img src="img/guide-img/guide-icon02.png" alt="">
                             </p>
-                            <p class="guide-menu-text">
+                            <p class="guide-menu-text02">
                                 꼭 필요한 <br>
                                 정보만 제공해요
                             </p>
                         </li>
 
                         <li>
-                            <span>03</span>
-                            <p>
+                            <span class="point">03</span>
+                            <p class="guide-menu-text01">
                                 보호하기
                                 <img src="img/guide-img/guide-icon03.png" alt="">
                             </p>
-                            <p class="guide-menu-text">
+                            <p class="guide-menu-text02">
                                 비밀번호와 접근 권한을<br>
                                 안전하게 관리해요.
                             </p>
                         </li>
 
                         <li>
-                            <span>04</span>
-                            <p>
+                            <span class="point">04</span>
+                            <p class="guide-menu-text01">
                                 삭제하기
                                 <img src="img/guide-img/guide-icon04.png" alt="">
                             </p>
-                            <p class="guide-menu-text">
+                            <p class="guide-menu-text02">
                                 사용하지 않는<br>
                                 개인정보는 정리해요.
                             </p>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </section>
         <!-- //guide-menu-area -->
 
         <section class="guide-category">
             <div class="inner">
-                <div class="guide-onlien">
+                <div class="guide-online">
                     <div class="online-title">
                         <h2>
                             <span>온라인</span>에서<br>
@@ -134,11 +138,636 @@
                     <div class="guide-online-list">
                         <ul class="online-list">
                             <li>
-                                <button class="online-btn">
+                                <button class="online-btn active">
                                     <span>01</span>
                                     <p>안전한 비밀번호 사용</p>
-                                    <img src="img/guide-img/plus-icon.png" alt="">
+                                    <i class="accordion-icon"></i>
                                 </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content">
+                                    <div class="visual">
+                                        <img src="img/guide-img/online-icon01.png" alt="">
+                                        <strong>안전한 비밀번호 만들기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            비밀번호는 외부로부터 나의 정보를 지키는 가장 기본적인 수단입니다. <br>
+                                            영문, 숫자, 특수문자를 조합하고 사이트마다 다른 비밀번호를 사용하는 것이 좋습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>8자 이상, 영문·숫자·특수문자 조합하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>사이트마다 다른 비밀번호 사용하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>주기적으로 비밀번호 변경하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>02</span>
+                                    <p>2단계 인증 설정</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/online-icon02.png" alt="">
+                                        <strong>계정 보안 강화하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            2단계 인증은 비밀번호가 유출되더라고 추가 인증을<br>
+                                            거쳐야 계정에 접근할 수 있도록 보호 하는 방법입니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>자주 사용하는 계정은 2단계 설정하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>인증번호를 다른 사람에게 알려주지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>사용하지 않는 인증 기기는 정리하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>03</span>
+                                    <p>공용 PC 사용 시 로그아웃</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/online-icon03.png" alt="">
+                                        <strong>사용 후 흔적 지우기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            PC방, 도서관 등 여러 사람이 사용하는 <br>
+                                            컴퓨에서는 로그인 정보가 남아 개인정보가
+                                            노출될 수 있습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>사용 후 반드시 로그아웃하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>비밀번호 자동 저장하지않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>금융·개인정보 관련 서비스는 가급적 이용하지 않기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>04</span>
+                                    <p>의심스러운 링크 확인</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/online-icon04.png" alt="">
+                                        <strong>링크 클릭 전 확인하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            문자나 이메일에 포함된 출처가<br>
+                                            불분명한 링크는 피싱 사이트나 악성코드로 연결 될 수 있습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>출처가 불분명한 링크 클릭하지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>URL 주소가 공식 사이트 인지 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>개인정보나 인증번호 입력 요구 시 주의하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- sns -->
+                <div class="guide-online">
+                    <div class="online-title">
+                        <h2>
+                            <span>SNS</span>에서<br>
+                            개인정보를 지키는 방법
+                        </h2>
+                        <p class="online-text">
+                            SNS에 올리는 작은 정보도<br>
+                            개인정보로 악용될 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="guide-online-list">
+                        <ul class="online-list">
+                            <li>
+                                <button class="online-btn active">
+                                    <span>01</span>
+                                    <p>공개 범위 설정</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content">
+                                    <div class="visual">
+                                        <img src="img/guide-img/sns-icon01.png" alt="">
+                                        <strong>나의 정보 공개 범위 관리</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            SNS 게시물은 내가 생각하는 것보다 많은 사람에게 공개될 수 있습니다. <br>
+                                            게시물과 프로필의 공개 범위를 확인해 주세요.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>게시물 공개 범위 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>모르는 사람의 팔로우 요청 주의하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>연락처와 프로필 정보 과도하게 공개하지 않기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>02</span>
+                                    <p>위치정보 확인</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/sns-icon02.png" alt="">
+                                        <strong>위치정보 노출 줄이기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            사진이나 게시물에는 촬영 장소와 같은 위치정보가 포함될 수 있습니다.<br>
+                                            일상적인 동선이 노출되지 않도록 주의해야 합니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>사진 업로드 전 위치정보 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>실시간 위치를 공개하지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>집·학교·직장 등 자주 가는 장소 노출하지 않기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>03</span>
+                                    <p>사진 업로드 주의</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/sns-icon03.png" alt="">
+                                        <strong>사진 속 개인정보 확인</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            사진 한 장에도 이름, 주소, 연락처, 신분증 등 <br>
+                                            다양한 개인정보가 포함될 수 있습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>사진 속 개인정보 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>신분증·명찰·택배 송장 가리기</p>
+                                                </li>
+                                                <li>
+                                                    <p>다른 사람의 사진은 동의 후 게시하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>04</span>
+                                    <p>의심 계정 차단</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/sns-icon04.png" alt="">
+                                        <strong>안전하지 않은 계정 차단</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            모르는 계정이 보내는 메시지나 팔로우 요청을 통해<br>
+                                            개인정보를 요구하거나 악성 링크를 전달할 수 있습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>모르는 계정의 메시지에 응답하지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>개인정보 요구 시 바로 차단하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>의심스러운 계정 신고하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- moblie -->
+                <div class="guide-online">
+                    <div class="online-title">
+                        <h2>
+                            <span>온라인</span>에서<br>
+                            개인정보를 지키는 방법
+                        </h2>
+                        <p class="online-text">
+                            인터넷을 사용할 때<br>
+                            기본적인 보안 수칙만 지켜도<br>
+                            개인정보를 안전하게 보호할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="guide-online-list">
+                        <ul class="online-list">
+                            <li>
+                                <button class="online-btn active">
+                                    <span>01</span>
+                                    <p>앱 권한 확인</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content">
+                                    <div class="visual">
+                                        <img src="img/guide-img/moblie-icon01.png" alt="">
+                                        <strong>앱 권한 확인하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            앱은 카메라, 마이크, 위치정보 등 다양한 권한을 요청할 수 있습니다. <br>
+                                            꼭 필요한 권한만 허용하는 것이 좋습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>앱 설치 후 권한 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>사용하지 않는 권한 끄기</p>
+                                                </li>
+                                                <li>
+                                                    <p>위치정보는 필요한 경우에만 허용하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>02</span>
+                                    <p>화면 잠금 설정</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/moblie-icon02.png" alt="">
+                                        <strong>스마트폰 잠금 설정하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            스마트폰을 분실하거나 다른 사람이 접근했을 때<br>
+                                            개인정보가 노출되지 않도록 화면 잠금을 설정해 주세요.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>PIN 또는 비밀번호 설정하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>쉽게 추측할 수 있는 번호 피하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>자동 잠금 시간을 짧게 설정하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>03</span>
+                                    <p>공공 Wi-Fi 주의</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/moblie-icon03.png" alt="">
+                                        <strong>안전한 Wi-Fi 사용하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            공공장소의 무료 Wi-Fi는 보안이 취약할 수 있어 <br>
+                                            개인정보나 금융정보를 입력할 때 주의해야 합니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>출처가 불분명한 Wi-Fi 연결하지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>금융거래는 안전한 네트워크에서 이용하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>자동 Wi-Fi 연결 기능 확인하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>04</span>
+                                    <p>운영체제 업데이트</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/moblie-icon04.png" alt="">
+                                        <strong>스마트폰 최신 상태 유지하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            스마트폰 운영체제 업데이트에는<br>
+                                            새로운 기능뿐 아니라 보안 취약점을 해결하는 내용도 포함됩니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>최신 업데이트 유지하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>자동 업데이트 설정하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>오래된 기기는 보안 지원 여부 확인하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- life -->
+                <div class="guide-online">
+                    <div class="online-title">
+                        <h2>
+                            <span>생활 속에서</span>에서<br>
+                            개인정보를 지키는 방법
+                        </h2>
+                        <p class="online-text">
+                            인터넷을 사용할 때<br>
+                            기본적인 보안 수칙만 지켜도<br>
+                            개인정보를 안전하게 보호할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="guide-online-list">
+                        <ul class="online-list">
+                            <li>
+                                <button class="online-btn active">
+                                    <span>01</span>
+                                    <p>문서·사진 관리</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content">
+                                    <div class="visual">
+                                        <img src="img/guide-img/life-icon01.png" alt="">
+                                        <strong>개인정보 자료 관리하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            주민등록번호, 주소, 연락처 등이 포함된 문서나 사진은 <br>
+                                            다른 사람에게 노출되지 않도록 안전하게 관리해야 합니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>중요한 문서 함부로 공유하지 않기</p>
+                                                </li>
+                                                <li>
+                                                    <p>필요 없는 개인정보 문서 안전하게 폐기하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>클라우드·사진 앨범 접근 권한 확인하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>02</span>
+                                    <p>공공장소에서 화면 보호하기</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/life-icon02.png" alt="">
+                                        <strong>일상 속 정보 노출 예방하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            카페나 대중교통처럼 사람이 많은 곳에서는<br>
+                                            화면이나 대화 내용을 통해 개인정보가 노출될 수 있습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>공공장소에서 개인정보 입력 시 주변 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>중요한 통화는 사람이 적은 곳에서 하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>화면을 다른 사람이 쉽게 볼 수 없도록 주의하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>03</span>
+                                    <p>개인정보 요청 확인하기</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/life-icon03.png" alt="">
+                                        <strong>정보 제공의 기준 세우기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            서비스 이용 중 개인정보를 요구받았다면 <br>
+                                            어떤 정보를 왜 수집하는지 확인한 후 제공하는 것이 좋습니다.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>필요한 정보인지 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>개인정보 이용 목적 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>불필요한 정보는 제공하지 않기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button class="online-btn active">
+                                    <span>04</span>
+                                    <p>사용하지 않는 계정 정리</p>
+                                    <i class="accordion-icon"></i>
+                                </button>
+                                <!-- 펼쳐지는 아코디언 내용 -->
+                                <div class="online-content" style="display: none;">
+                                    <div class="visual">
+                                        <img src="img/guide-img/life-icon04.png" alt="">
+                                        <strong>디지털 정보 정리하기</strong>
+                                    </div>
+
+                                    <div class="tip-title">
+                                        <p class="tip-text">
+                                            오랫동안 사용하지 않는 계정에도 개인정보가 남아 있을 수 있습니다.<br>
+                                            사용하지 않는 서비스는 정리해 주세요.
+                                        </p>
+                                        <div class="tip-area">
+                                            <span>TIP</span>
+                                            <ul>
+                                                <li>
+                                                    <p>사용하지 않는 계정 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>탈퇴 전 개인정보 삭제 여부 확인하기</p>
+                                                </li>
+                                                <li>
+                                                    <p>연결된 앱·서비스 권한 정리하기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -146,6 +775,35 @@
             </div>
         </section>
 
+
+        <!-- guide cta -->
+        <section class="check-guide-banner">
+            <div class="inner">
+                <div class="check-guide-banner-inner">
+                    <div class="check-guide-text">
+                        <h2>
+                            더 안전한 디지털 일상을 위해<br>
+                            <span class="point">
+                                개인정보 가이드
+                            </span>를 확인해 보세요.
+                        </h2>
+                        <p>
+                            각 항목에 대한 자세한 설명과
+                            실천 방법을 알아볼 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="check-guide-action">
+                        <img src="img/check-guide-icon.png" alt="">
+                        <a href="check.html" class="btn-primary">
+                            개인정보 체크리스트 시작하기
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //guide cta -->
 
 
         <footer class="footer">

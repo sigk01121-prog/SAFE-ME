@@ -1,1 +1,708 @@
 @charset "utf-8";
+
+.hero {
+    background: url(/img/guide-img/guide-hero.png)no-repeat center/cover;
+    width: 100%;
+    height: 700px;
+}
+
+.hero .inner {
+    margin-top: 0;
+}
+
+img {
+    width: 100%s;
+}
+
+.inner {
+    margin: 100px auto;
+}
+
+.guide-menu-area {
+    background: var(--blue-bg);
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.guide-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guide-menu ul li {
+    position: relative;
+}
+
+.guide-menu ul li h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.guide-menu ul li span {
+    color: var(--primary);
+}
+
+.guide-menu ul li .point {
+    display: block;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.guide-menu ul li .guide-title {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.2;
+}
+
+.guide-menu ul li .guide-menu-text01 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-menu ul li .guide-menu-text01 img {
+    width: 25px;
+}
+
+.guide-menu ul li .guide-menu-text02 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.guide-menu ul li::after {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transform: translateX(50%);
+    width: 1px;
+    height: 110px;
+    background: hsl(0, 0%, 76%);
+    content: '';
+}
+
+.guide-menu ul li:nth-child(1)::after {
+    display: none;
+}
+
+/* guide-online */
+.guide-online {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.guide-online-list {
+    width: 874px;
+    flex-shrink: 0;
+}
+
+.online-title h2 {
+    margin-bottom: 25px;
+}
+
+.online-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--gray);
+}
+
+.online-title span {
+    color: var(--primary);
+}
+
+.online-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    border: 1px solid #cfd3da;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.online-list>li {
+    border-bottom: 1px solid #cfd3da;
+}
+
+.online-list>li:last-child {
+    border-bottom: 0;
+}
+
+
+/* 버튼 */
+
+.online-btn {
+    width: 100%;
+    height: 80px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+
+    border: 0;
+    background: #fff;
+
+    cursor: pointer;
+    text-align: left;
+}
+
+.online-btn>span {
+    width: 40px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.online-btn>p {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* + / - */
+
+.accordion-icon {
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    margin-left: auto;
+}
+
+.accordion-icon::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 20px;
+    height: 2px;
+
+    background: #3564e8;
+
+    transform: translateY(-50%);
+}
+
+.accordion-icon::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    width: 2px;
+    height: 20px;
+
+    background: #3564e8;
+
+    transform: translateX(-50%);
+}
+
+.online-btn.active .accordion-icon::after {
+    display: none;
+}
+
+
+/* 펼쳐지는 영역 */
+
+.online-content {
+    display: none;
+}
+
+.online-btn.active+.online-content {
+
+    height: 284px;
+
+    margin: 0 30px 20px;
+    padding: 35px;
+
+    align-items: center;
+    gap: 45px;
+
+    background: #f2f5fd;
+    border-radius: 14px;
+
+    display: none;
+}
+
+
+/* 왼쪽 아이콘 */
+
+.online-content .visual {
+    width: 180px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.online-content .visual img {
+    width: 140px;
+    height: 110px;
+
+    object-fit: contain;
+}
+
+.online-content .visual strong {
+    margin-top: 18px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* 오른쪽 설명 */
+
+.tip-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.tip-text {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* TIP */
+
+.tip-area {
+    padding: 22px 35px;
+
+    background: #fff;
+    border-radius: 12px;
+}
+
+.tip-area>span {
+    display: inline-block;
+
+    margin-bottom: 14px;
+    padding: 5px 10px;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    color: #3564e8;
+    background: #f0f4ff;
+    border-radius: 5px;
+}
+
+.tip-area ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.tip-area li {
+    position: relative;
+
+    padding-left: 28px;
+    margin-bottom: 12px;
+}
+
+.tip-area li:last-child {
+    margin-bottom: 0;
+}
+
+.tip-area li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #3564e8;
+    background: #edf2ff;
+    border-radius: 50%;
+}
+
+.tip-area li p {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #555;
+}
+
+/*  sns 영역 */
+
+/* .guide-online-list {
+    width: 100%;
+    max-width: 874px;
+} */
+
+/* .online-content {
+    width: calc(100% - 40px);
+    height: 300px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--blue-bg);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.online-btn.active+.online-content {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.guide-online-list {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.guide-online {
+    display: flex;
+    justify-content: space-between;
+}
+
+.online-content .visual {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-online-list ul li .online-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-online-list ul li {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 20px;
+}
+
+.guide-online-list>li {
+    margin-bottom: 0;
+}
+
+.guide-online-list ul li:last-child {
+    border-bottom: none;
+}
+
+.guide-online-list ul li .online-btn {
+    display: flex;
+}
+
+.guide-online-list .online-btn img {
+    width: 23px;
+}
+
+.online-content .visual img {
+    width: 150px;
+}
+
+.online-title h2 {
+    margin-bottom: 15px;
+}
+
+.online-title h2 span {
+    color: var(--primary);
+}
+
+.guide-online-list .online-btn span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.guide-online-list .online-btn p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.online-title .online-text {
+    font-size: 20px;
+    color: var(--gray);
+    line-height: 1.4;
+}
+
+.tip-title {
+    width: 60%;
+}
+
+.tip-area {
+    width: 100%;
+    height: 180px;
+    padding: 20px 30px;
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.tip-area ul li {
+    border-bottom: none;
+    padding: 0;
+}
+
+.tip-title .tip-text {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+.tip-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tip-area span {
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+    width: 45px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--blue-bg);
+    margin-bottom: 15px;
+}
+
+.tip-area ul li p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.tip-area ul li {
+    position: relative;
+    margin-left: 40px;
+}
+
+.tip-area ul li::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    background: var(--blue-bg);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.tip-area ul li::after {
+    position: absolute;
+    content: '';
+
+    top: 0;
+    left: -30px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/guide-img/checking-mark.png) no-repeat center/cover;
+}
+ */
+/* .guide-online {
+    display: flex;
+    justify-content: space-between;
+}
+
+.online-title h2 {
+    margin-bottom: 15px;
+}
+
+.online-title h2 span {
+    color: var(--primary);
+}
+
+.online-text {
+    font-size: 20px;
+    color: var(--gray);
+    line-height: 1.4;
+}
+
+.guide-online-list {
+    width: 100%;
+    max-width: 874px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.guide-online-list ul li {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.guide-online-list ul li:last-child {
+    border-bottom: none;
+}
+
+.guide-online-list .online-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-online-list .online-btn img {
+    margin-left: auto;
+}
+
+.guide-online-list .online-btn span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.guide-online-list .online-btn p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.guide-online-list .online-btn img {
+    width: 23px;
+}
+
+.online-content {
+    width: calc(100% - 40px);
+    height: 180px;
+    background: var(--blue-bg);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 30px 30px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.online-content .visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.online-content .visual img {
+    width: 150px;
+}
+
+.tip-area {
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.tip-area ul li {
+    border-bottom: none;
+}
+
+.tip-title .tip-text {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 25px;
+} */
+
+/* GUIDE BANNER */
+.check-guide-banner {
+    padding: 40px 0 90px;
+}
+
+.check-guide-banner-inner {
+    min-height: 150px;
+    padding: 28px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--radius-lg);
+    background: var(--blue-bg);
+}
+
+.check-guide-text h2 {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.check-guide-text p {
+    margin-top: 8px;
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.check-guide-action {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.check-guide-action img {
+    width: 90px;
+}
+
+.check-guide-action .btn-primary {
+    min-width: 220px;
+}
+
+
+
+/* BUTTON */
+.btn-primary {
+    min-width: 190px;
+    height: 54px;
+    padding: 0 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    border: 0;
+    background: #365CF5;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0e2fb1;
+}
