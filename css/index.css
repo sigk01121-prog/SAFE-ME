@@ -1,1 +1,351 @@
 @charset "utf-8";
+
+.about {
+    padding-top: 100px;
+}
+
+.about-content {
+    background: #F1F5FD;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 50px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .point {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    line-height: 1.5;
+}
+
+.about-text .sub-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.about .card-area {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3) {
+    width: 223px;
+    height: 212px;
+    padding: 20px;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+}
+
+.card:nth-child(1) {
+    background: url(../img/main-img/about01.png) no-repeat center/cover;
+}
+
+.card:nth-child(2) {
+    background: url(../img/main-img/about02.png) no-repeat center/cover;
+}
+
+.card:nth-child(3) {
+    background: url(../img/main-img/about03.png) no-repeat center/cover;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.number {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card:nth-child(1) .number {
+    color: #365CF5;
+}
+
+.card:nth-child(2) .number {
+    color: #7276FA;
+}
+
+.card:nth-child(3) .number {
+    color: #40D4AF;
+}
+
+.about h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ---------------------------------------about 끝------------------------------------------- */
+
+.privacy-info {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.privacy-info .info-title>h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.privacy-info .info-title>p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    min-height: 227px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.info-box>.info-title {
+    width: 431px;
+    height: 227px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    background: #F1F5FD;
+}
+
+.info-box>.info-title>img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 12px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text h3 {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #315efb;
+}
+
+.info-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.info-detail {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.info-detail p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-image {
+    width: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-image img {
+    width: 281px;
+    height: auto;
+}
+
+/* ---------------------------------------privacy-info 끝------------------------------------------- */
+
+.privacy-menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.menu-title {
+    margin-bottom: 25px;
+}
+
+.menu-title h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.menu-title p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.3;
+}
+
+.menu-list {
+    display: flex;
+    gap: 80px;
+}
+
+.menu-card {
+    position: relative;
+    background: url(../img/main-img/card1.png) no-repeat center/cover;
+    width: 600px;
+    height: 554px;
+    padding: 60px 20px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card:nth-child(2) {
+    background: url(../img/main-img/card2.png) no-repeat center/cover;
+}
+
+.menu-card .number {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #315efb;
+}
+
+.menu-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.menu-card h3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-card>p {
+    font-size: 22px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.menu-info {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.7;
+}
+
+.menu-card a {
+    position: absolute;
+    left: 20px;
+    bottom: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #315efb;
+    transition: 0.3;
+}
+
+.menu-card a:hover {
+    font-weight: 700;
+}
+
+/* ---------------------------------------privacy-menu 끝------------------------------------------- */
+
+.cta {
+    position: relative;
+    height: 478px;
+    overflow: hidden;
+}
+
+.cta-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-box {
+    position: relative;
+    z-index: 1;
+    height: 478px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-title {
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.cta img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.cta h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.cta p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #315efb;
+}
+
+.last::before,
+.last::after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #365CF5;
+}
+
+/* ---------------------------------------cta 끝------------------------------------------- */
