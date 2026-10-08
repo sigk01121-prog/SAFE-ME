@@ -151,7 +151,7 @@ function setReadyState() {
     heroLabel.textContent = "CHECK YOUR PRIVACY";
 
     heroTitle.innerHTML = `
-        나의 개인정보 보호 습관을
+        나의 개인정보 보호 습관을<br>
         <span class="point">직접 확인해 보세요!</span>
     `;
 
